@@ -4,9 +4,6 @@ import os
 sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "hl2ss", "viewer"))
 )
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-if PROJECT_ROOT not in sys.path:
-    sys.path.append(PROJECT_ROOT)
 
 import numpy as np
 import cv2
@@ -58,8 +55,8 @@ def set_equal_axis_ranges(fig, xs, ys, zs, pad=0.05):
     )
 
 pv_fifo = deque(maxlen=10)
-path = r'/home/arssist/study_data/CapsOn_viewpointL_wjointangle/Trial 2-2/'
-name_of_run = r'CapsOn_viewpointL_wjointangle_Trial 2-2 image test'
+path = r''
+name_of_run = r''
 json_filename = 'personal_video.json'
 calib_filename = '1280_720_calibration.pkl'
 calibration_path = 'calibrations'
